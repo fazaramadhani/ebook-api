@@ -14,21 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view("welcome");
-});
-
-Route::get("/me", 'AuthController@me');
-
-Route::get('/books', 'BookController@index');
-
-
-Route::post('/books/create', 'BookController@store');
-
-
-Route::post('/books/update/{id}', 'BookController@update');
-
-Route::delete('/books/delete/{id}', 'BookController@destroy');
-
-Route::get('/kontrol', function () {
-    return "latihan control";
+    return view('welcome');
 });
