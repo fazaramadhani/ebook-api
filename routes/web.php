@@ -32,3 +32,5 @@ Route::delete('/books/delete/{id}', 'BookController@destroy');
 Route::get('/kontrol', function () {
     return "latihan control";
 });
+
+Route::resource('authors', 'AuthorController');

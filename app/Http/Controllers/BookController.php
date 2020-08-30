@@ -100,8 +100,6 @@ class BookController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-
             try{
 
                 $title = $request->input('title');
@@ -144,7 +142,6 @@ class BookController extends Controller
     public function destroy($id)
     {
         //
-
         try{
             $data = \App\Book::where('id',$id)->first();
             if($data->delete()){
