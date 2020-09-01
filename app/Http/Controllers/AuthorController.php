@@ -123,7 +123,7 @@ class AuthorController extends Controller
             if($data->save()){
                 return response()->json([
                     'status' => true,
-                    'message' => 'Buku Berhasil di Update',
+                    'message' => 'Data Berhasil di Update',
                 ]);
             }
         }catch (\Exception $e) {
@@ -148,7 +148,7 @@ class AuthorController extends Controller
             if($data->delete()){
                 return response()->json([
                     'status' => true,
-                    'message' => 'Berhasil Delete Buku',
+                    'message' => 'Data Berhasil Delete',
                 ]);
             }
         }catch (\Exception $e) {
