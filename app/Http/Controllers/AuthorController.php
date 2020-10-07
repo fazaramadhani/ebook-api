@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use JWTAuth;
 use App\Author;
 
 class AuthorController extends Controller
